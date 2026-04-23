@@ -14,6 +14,10 @@ const VA_DEFAULTS = /*EDITMODE-BEGIN*/{
 
 const VACtx = React.createContext(VA_DEFAULTS);
 
+// ── Layout constants ────────────────────────────────
+const PX_DESKTOP = 'clamp(32px, 5vw, 72px)';
+const PX_MOBILE  = '24px';
+
 // ── Responsive hook ─────────────────────────────────
 const useWindowWidth = () => {
   const [w, setW] = React.useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
@@ -127,7 +131,7 @@ const ttxt = {
 const VANav = () => {
   const w = useWindowWidth();
   const mobile = w < 900;
-  const px = mobile ? '28px' : '64px';
+  const px = mobile ? PX_MOBILE : PX_DESKTOP;
 
   const scrollTo = (id) => {
     const el = document.getElementById(id);
@@ -184,7 +188,7 @@ const navBtn = {
 const VAHero = () => {
   const w = useWindowWidth();
   const mobile = w < 900;
-  const px = mobile ? '28px' : '64px';
+  const px = mobile ? PX_MOBILE : PX_DESKTOP;
 
   return (
     <div style={{
@@ -411,7 +415,7 @@ const ChatBubble = ({ from, voice, duration, model, card, children }) => {
 // ── Marquee strip ───────────────────────────────────
 const VAMarquee = () => (
   <div style={{
-    padding: '28px 64px', borderTop: '1px solid rgba(26,22,19,0.12)', borderBottom: '1px solid rgba(26,22,19,0.12)',
+    padding: `28px ${PX_DESKTOP}`, borderTop: '1px solid rgba(26,22,19,0.12)', borderBottom: '1px solid rgba(26,22,19,0.12)',
     display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16,
     fontFamily: 'Inter, system-ui, sans-serif', fontSize: 13, color: 'rgba(26,22,19,0.65)',
     letterSpacing: '0.05em',
@@ -428,7 +432,7 @@ const VAMarquee = () => (
 const VAHowItWorks = () => {
   const w = useWindowWidth();
   const mobile = w < 900;
-  const px = mobile ? '28px' : '64px';
+  const px = mobile ? PX_MOBILE : PX_DESKTOP;
   const cols = w < 600 ? '1fr' : w < 900 ? 'repeat(2, 1fr)' : 'repeat(4, 1fr)';
 
   return (
@@ -465,7 +469,7 @@ const VAHowItWorks = () => {
 const VARubric = () => {
   const w = useWindowWidth();
   const mobile = w < 900;
-  const px = mobile ? '28px' : '64px';
+  const px = mobile ? PX_MOBILE : PX_DESKTOP;
 
   return (
     <section style={{ padding: `96px ${px}`, background: '#ece5d8', borderTop: '1px solid rgba(26,22,19,0.12)' }}>
@@ -540,7 +544,7 @@ const VARubric = () => {
 const VAInstitutes = () => {
   const w = useWindowWidth();
   const mobile = w < 900;
-  const px = mobile ? '28px' : '64px';
+  const px = mobile ? PX_MOBILE : PX_DESKTOP;
   const cols = mobile ? '1fr' : 'repeat(2, 1fr)';
 
   return (
@@ -582,7 +586,7 @@ const VAInstitutes = () => {
 const VAContact = () => {
   const w = useWindowWidth();
   const mobile = w < 900;
-  const px = mobile ? '28px' : '64px';
+  const px = mobile ? PX_MOBILE : PX_DESKTOP;
   const headingSize = w < 600 ? 44 : mobile ? 60 : 84;
 
   return (
@@ -624,7 +628,7 @@ const VAContact = () => {
 };
 
 const VAFooter = () => (
-  <footer style={{ padding: '28px 64px', background: '#1a1613', color: 'rgba(245,241,232,0.5)', borderTop: '1px solid rgba(245,241,232,0.12)', fontFamily: 'Inter, system-ui, sans-serif', fontSize: 12, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, letterSpacing: '0.06em' }}>
+  <footer style={{ padding: `28px ${PX_DESKTOP}`, background: '#1a1613', color: 'rgba(245,241,232,0.5)', borderTop: '1px solid rgba(245,241,232,0.12)', fontFamily: 'Inter, system-ui, sans-serif', fontSize: 12, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, letterSpacing: '0.06em' }}>
     <div>© 2026 VOICE EVALUATION</div>
     <div>MADE FOR IELTS COACHING INSTITUTES · INDIA</div>
   </footer>
