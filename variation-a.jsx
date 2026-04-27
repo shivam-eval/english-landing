@@ -630,7 +630,10 @@ const VAContact = () => {
 const VAFooter = () => (
   <footer style={{ padding: `28px ${PX_DESKTOP}`, background: '#1a1613', color: 'rgba(245,241,232,0.5)', borderTop: '1px solid rgba(245,241,232,0.12)', fontFamily: 'Inter, system-ui, sans-serif', fontSize: 12, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, letterSpacing: '0.06em' }}>
     <div>© 2026 VOICEEVAL TECHNOLOGIES PVT LTD</div>
-    <div>MADE FOR IELTS COACHING INSTITUTES · INDIA</div>
+    <div style={{ display: 'flex', gap: 18, alignItems: 'center' }}>
+      <span>MADE FOR IELTS COACHING INSTITUTES · INDIA</span>
+      <a href="privacy.html" style={{ color: 'inherit', textDecoration: 'none' }}>PRIVACY</a>
+    </div>
   </footer>
 );
 
