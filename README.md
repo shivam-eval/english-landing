@@ -1,6 +1,6 @@
-# Voice Evaluation — Landing Page
+# SpeakMitra English — Landing Page
 
-Landing page for **Voice Evaluation**, a WhatsApp-based IELTS Speaking practice companion for coaching institutes.
+Landing page for **SpeakMitra English**, a WhatsApp-based spoken English practice companion for Hindi/Hinglish learners across India.
 
 ## Files
 - `index.html` — the page. Open it in a browser.
@@ -21,4 +21,4 @@ Then open http://localhost:8000.
 Any static host works: GitHub Pages, Netlify, Vercel, Cloudflare Pages. Point it at this folder.
 
 ## Contact
-Shivam Gupta · shivam@voiceeval.com · +91 90419 26882
+Shivam Gupta · shivam@voiceeval.com · +91 63614 05165

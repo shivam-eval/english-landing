@@ -1,10 +1,10 @@
-// English Mitra — your WhatsApp friend for spoken English practice.
+// SpeakMitra English — your WhatsApp friend for spoken English practice.
 // Warm, simple, local. For Hindi/Hinglish learners across India.
 
 const VA_DEFAULTS = /*EDITMODE-BEGIN*/{
   "accentColor": "#9a3412",
-  "headline": "English Mitra",
-  "italicWord": "Mitra",
+  "headline": "SpeakMitra English",
+  "italicWord": "English",
   "subheadline": "Your WhatsApp friend for spoken English practice.",
   "copy": "Send a voice note and get simple feedback on grammar, vocabulary, fluency, clarity, and pronunciation.",
   "showHowItWorks": true,
@@ -18,8 +18,8 @@ const VACtx = React.createContext(VA_DEFAULTS);
 const PX_DESKTOP = 'clamp(32px, 5vw, 72px)';
 const PX_MOBILE  = '24px';
 
-const WA_NUMBER_DISPLAY = '+91 90419 26882';
-const WA_LINK = 'https://wa.me/919041926882?text=Hi%20English%20Mitra%21%20I%20want%20to%20practise%20English.';
+const WA_NUMBER_DISPLAY = '+91 63614 05165';
+const WA_LINK = 'https://wa.me/916361405165?text=Hi%20SpeakMitra%20English%21%20I%20want%20to%20practise%20English.';
 const WA_GREEN = '#25D366';
 const WA_GREEN_DARK = '#128C7E';
 
@@ -165,8 +165,8 @@ const VANav = () => {
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           fontFamily: '"Source Serif 4", serif', fontStyle: 'italic',
           fontSize: 19, fontWeight: 500, flexShrink: 0,
-        }}>M</div>
-        <div style={{ fontSize: 19, letterSpacing: '-0.01em', fontWeight: 500, whiteSpace: 'nowrap' }}>English Mitra</div>
+        }}>S</div>
+        <div style={{ fontSize: 19, letterSpacing: '-0.01em', fontWeight: 500, whiteSpace: 'nowrap' }}>SpeakMitra English</div>
       </a>
 
       {!mobile && (
@@ -334,9 +334,9 @@ const VAChatWindow = () => (
         background: '#f5f1e8', color: '#1a1613',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         fontFamily: '"Source Serif 4", serif', fontStyle: 'italic', fontSize: 19,
-      }}>M</div>
+      }}>S</div>
       <div style={{ flex: 1 }}>
-        <div style={{ fontSize: 14, fontWeight: 600 }}>English Mitra</div>
+        <div style={{ fontSize: 14, fontWeight: 600 }}>SpeakMitra English</div>
         <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.85)' }}>online</div>
       </div>
       <WAIcon size={18} />
@@ -350,7 +350,7 @@ const VAChatWindow = () => (
       backgroundSize: '20px 20px',
     }}>
       <ChatBubble from="bot">
-        Namaste! I'm English Mitra. Send a voice note in English — about your day, your work, anything. Don't worry about mistakes.
+        Namaste! I'm SpeakMitra English. Send a voice note in English — about your day, your work, anything. Don't worry about mistakes.
       </ChatBubble>
       <ChatBubble from="user" voice duration="1:24" />
       <ChatBubble from="bot" card>
@@ -452,7 +452,7 @@ const VAHowItWorks = () => {
       <div style={{ display: 'grid', gridTemplateColumns: cols, gap: 2, border: '1px solid rgba(26,22,19,0.12)', background: 'rgba(26,22,19,0.12)' }}>
         {[
           { n: '01', t: 'Say hi', d: 'Tap the WhatsApp button on this page. A simple "Hi" gets you started — no forms, no signup.' },
-          { n: '02', t: 'Pick a topic', d: 'Mitra suggests a topic — your day, a job interview question, a phone call. Or pick your own.' },
+          { n: '02', t: 'Pick a topic', d: 'SpeakMitra suggests a topic — your day, a job interview question, a phone call. Or pick your own.' },
           { n: '03', t: 'Send a voice note', d: 'Speak in English the way you would normally. One minute is enough. Mistakes are welcome.' },
           { n: '04', t: 'Get simple feedback', d: 'Within seconds, friendly feedback in your language. Plus a sample pronunciation to copy.' },
         ].map((s) => (
@@ -652,7 +652,7 @@ const VAFooter = () => {
       display: 'flex', justifyContent: 'space-between',
       flexWrap: 'wrap', gap: 12, letterSpacing: '0.06em',
     }}>
-      <div>© 2026 ENGLISH MITRA</div>
+      <div>© 2026 SPEAKMITRA ENGLISH</div>
       <div style={{ display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' }}>
         <span>SPOKEN ENGLISH PRACTICE · MADE IN INDIA</span>
         <a href="privacy.html" style={{ color: 'inherit', textDecoration: 'none' }}>PRIVACY</a>
