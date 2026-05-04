@@ -1,6 +1,8 @@
-# SpeakMitra English — Landing Page
+# Rozbolo English - Landing Page
 
-Landing page for **SpeakMitra English**, a WhatsApp-based spoken English practice companion for Hindi/Hinglish learners across India.
+Landing page for **Rozbolo English**, a WhatsApp-based spoken English practice companion for Hindi/Hinglish learners across India.
+
+Rozbolo English is operated by VoiceEval Technologies Private Limited.
 
 ## Files
 - `index.html` — the page. Open it in a browser.
