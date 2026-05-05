@@ -2,10 +2,14 @@
 
 Landing page for **Rozbolo English**, a WhatsApp-based spoken English practice companion for Hindi/Hinglish learners across India.
 
-Rozbolo English is operated by VoiceEval Technologies Private Limited.
+Rozbolo English is the customer-facing brand and WhatsApp display name for this service.
+It is operated by VoiceEval Technologies Private Limited.
 
 ## Files
 - `index.html` — the page. Open it in a browser.
+- `business.html` — official business/profile information for display-name review.
+- `privacy.html` — privacy policy.
+- `terms.html` — terms of service.
 - `variation-a.jsx` — all page components (React, transpiled in-browser via Babel standalone).
 
 ## Run locally
