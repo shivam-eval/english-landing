@@ -1,8 +1,8 @@
-# Rozbolo English - Landing Page
+# VoiceEval English Coach - Landing Page
 
-Landing page for **Rozbolo English**, a WhatsApp-based spoken English practice companion for Hindi/Hinglish learners across India.
+Landing page for **VoiceEval English Coach**, a WhatsApp-based spoken English practice companion for Hindi/Hinglish learners across India.
 
-Rozbolo English is the customer-facing brand and WhatsApp display name for this service.
+VoiceEval English Coach is the customer-facing brand and WhatsApp display name for this service.
 It is operated by VoiceEval Technologies Private Limited.
 
 ## Files
